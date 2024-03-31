@@ -1,0 +1,6 @@
+server:
+  port: 8084
+spring:  cache:    jcache:      config: classpath:ehcache.xml
+user:
+  default:
+     name: ",Andy0,Andy1,Andy2,Andy3,Andy4,Andy5,Andy6,Andy7,Andy8,Andy9,"   

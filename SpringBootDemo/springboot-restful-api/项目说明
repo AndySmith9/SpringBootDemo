@@ -1,0 +1,26 @@
+项目采用分层架构:控制层,业务逻辑层,数据访问层
+数据访问层的数据源为List<User>.
+
+
+类UserController的方法public JsonData getUserByName(@PathVariable("name") String name)里的这段代码
+		String name1 = String.format(",%s,",name);
+		if(!defaultName.contains(name1)) {
+			throw new ParamException("默认用户名字不存在");
+		}
+可以被注释掉,它是为了测试全局异常处理类SpringExceptionHandler(实现了接口HandlerExceptionResolver)而加上的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
